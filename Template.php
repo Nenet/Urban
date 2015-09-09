@@ -143,7 +143,20 @@
       <div id="content-center">
             <h1 id="titre1"> Rendez-vous </h1>
             <div class="bloc-large">
-                <h2 id="titre2"> Réservez votre date</h2>
+                
+     
+          <script src="//app.agenda.ch/javascripts/widget_over_2.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              AgendaCH.renderButton({company:1228,btnStyle:2,btnTarget:'modal',btnText:"Prendre rendez-vous"})
+            </script>
+        
+          
+                <h2 id="titre2"> Besoin de nous contacter ?</h2>
+                
+                   <?php
+
+             include('formular/formular.php');
+             ?>
                 <p> Choisissez votre date et remplissez le formulaire. </p>
                   </div>
 <!--
@@ -159,12 +172,9 @@
                 </div>
             
             <secti on>-->
-            <h3>Formulaire de contact</h3>
+           <!-- <h3>Formulaire de contact</h3>-->
              
-                <?php
-
-             include('formular/formular.php');
-             ?>
+             
             
            <!-- <div id="formular">
     
