@@ -1,0 +1,363 @@
+logo{
+    text-align: center;
+    background-image: url(.../images/logo.jpg);
+    width: 100px; 
+    height: 100px;
+}
+
+
+
+body{
+  margin: 0;
+  background-color: black;
+}
+p{
+    font-famiy: 'Tahoma,Trebuchet MS,Calibri, Times New Roman';
+    text-align: justify;
+    color: black;
+    font-size: 22px;
+    
+}
+
+#titre1{
+    /*caption-side: top;*/
+    top: 15%;
+    color: #fff;
+    font-family:"Times New Roman", Times, serif;
+    font-size:66px;
+    height:70px;
+    line-height:71px;
+    border:1px solid #C00;
+    border-width:1px 0;
+    font-weight:lighter;
+    text-transform:uppercase;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.75);
+    margin-bottom:22px;
+    
+
+
+}
+
+#titre2{
+    color: black; /* Couleur du titre du bloc */
+    font-size:  50px;
+    filter: alpha(opacity=100);
+    opacity: 1.0;
+}
+
+.outer{
+    
+  display: table; 
+   overflow: hidden;
+  width: 100%;
+ 
+}
+
+.inner{
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.center{
+  text-align: center;
+}
+
+.full-height{
+  height: 90vh;
+  
+  
+}
+
+.half-height{
+  height: 50vh;
+}
+
+.quarter-height{
+  height: 25vh;
+}
+
+.pannel{
+  color: black;
+  font-family: 'Pacifico';
+  font-size: 5em;
+}
+
+.buttons{
+    float: left;
+  /*position: fixed;*/
+  
+
+}
+
+.button{
+  font-family: 'Trebuchet MS, Tahoma, Calibri, Times New Roman';
+  font-size: 2em;
+  color: white;
+  border: none;
+  background: 0;
+  /*position: right;*/
+  background-color: black;
+}
+
+.accueil{
+     background: url(../images/img_accueil.jpg) /*0 0 no-repeat*/;
+   width: 100%;
+   margin:0;
+    padding:0;
+    background-size: cover;
+    /*background:url(../img/img_accueil.jpg) 0 0 no-repeat fixed;*/
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:black;
+}
+
+.produits{
+  
+  background: url(../images/chx.jpg) /*0 0 no-repeat*/;
+   width: 100%;
+   margin:0;
+    padding:0;
+    background-size: cover;
+    /*background:url(../img/img_accueil.jpg) 0 0 no-repeat fixed;*/
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:black;
+}
+
+.rdv{
+    background: url(../images/woman.jpg) /*0 0 no-repeat*/;
+     width: 100%;
+    margin:0;
+    padding:0;
+    background-size: cover;
+    /*background:url(../img/img_accueil.jpg) 0 0 no-repeat fixed;*/
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:black;
+}
+
+.images {
+  background: url(../images/hairstyle.jpg) /*0 0 no-repeat*/;
+   width: 100%;
+   margin:0;
+    padding:0;
+    background-size: cover;
+    
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:black;
+
+}
+
+//** Contents **//
+
+#content-center{
+    color:red;
+    min-height:50px;
+    width: 600px;
+    /*position:absolute;*/
+    left:640px;
+    margin-left: -150%; /*pour modifier la place du block contenant le texte */
+    top: 10px;
+    height:30px;
+}
+
+/*.transparence{ opacity: 0.5;}*/
+
+
+.bloc-large{
+    background-color:           white; /* Couleur de fond du bloc */
+    filter:                     alpha (opacity=50);
+    opacity:			 0.5;
+    margin-bottom:		6px;
+    padding:			40px;
+    box-shadow: 		0px 1px 5px 0px #4a4a4a;
+
+}
+
+div#galerie{
+    position: absolute;
+    /*top: 90px;*/
+    left: 120px; 
+}
+
+#galerie img{
+    margin: 20px;
+    width: 400px;
+    height: 230px;
+    border: solid 1px; 
+}
+
+
+/* Calendrier */
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+*{margin:0;padding:0;}
+
+/*body{
+  background:#445566;
+}*/
+
+#calendar{
+  width:197px; /* dimensions de la marge du titre du mois*/
+  margin:0 auto;
+  margin-top: 3%; /* Position du calendrier par rapport au haut */
+  margin-left: 10%; /* position du calendrier par rapport au bord gauche */
+  margin-bottom:15%;
+  border-radius:25px;
+  font-family:'Open Sans',sans-serif;
+  text-align:left;
+  color: #C00;
+  box-shadow:0 0 50px -14px rgba(0,0,0,.8);
+}
+
+#calendar h3{
+  background:#ee3333;
+  border-radius:4px 4px 0 0;
+  padding:20px;
+  font-size:40%; /* Taille du titre du mois*/
+  font-weight:95%;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#fff;
+  cursor:default;
+  text-shadow:0 0 10px rgba(0,0,0,.8);
+}
+
+#calendar table{
+  
+  font-size: 10px;
+  border-top:1px solid #ddd;
+  border-left:1px solid #ddd;
+  border-spacing:0;
+  border-radius:0 0 5px 5px;
+}
+
+#calendar td{
+  width:15px;
+  height:15px;
+  background:#eee;
+  border-right:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  padding:6px;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+#calendar td:hover:not(.current){
+  background:#ddd;
+}
+
+#calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
+  background:#fff;
+  color:#999;
+}
+
+#calendar .current{
+  background:#ee3333;
+  font-weight:700;
+  color:#fff;
+  text-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+#calendar .hastask{
+  font-weight:700;
+}
+
+#calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
+#calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
+
+/* Formulaire de contact */
+
+/*Font Awesome Icons*/
+@import url(http:////maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+
+h3{
+  font-family:sans-serif;
+  font-weight:lighter;
+  color:#CCC;
+  text-transform:uppercase;
+  text-align:center;
+  font-size:1.3em;
+  line-height:1.5em;
+  margin-top:4px;
+}
+#formular {
+  background-color:#50cade;
+  padding:50px 50px 100px 50px;
+  width: 100px;   /* largeur du cadre du formulaire */
+  margin:0 auto;
+  margin-top:10px;
+  -webkit-border-radius: 15px; 
+     -moz-border-radius: 15px; 
+          border-radius: 15px;
+  -webkit-box-shadow: 0px 12px 15px #151515;
+     -moz-box-shadow: 0px 12px 15px #151515;
+          box-shadow: 0px 12px 15px #151515;
+}
+
+.input {
+  position:relative;
+  font-family:sans-serif;
+  font-size: 1em;
+  font-weight:lighter;
+  color:red;
+  background-color: #FFF;
+  width:50%;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 20px;
+  border: 3px solid #FFF;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition:0.2;
+         transition:0.2s;
+}
+
+.input:focus{
+  -webkit-box-shadow: 0px 0px 5px #003740;
+     -moz-box-shadow: 0px 0px 5px #003740;
+          box-shadow: 0px 0px 5px #003740;
+  -webkit-transition:0.8;
+         transition:0.8s;  
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+.name:before{
+    content: "\f007";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#boton{
+  font-family:sans-serif;
+  color:white;
+  text-align:center;
+  text-decoration:none;
+}
