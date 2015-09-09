@@ -146,7 +146,7 @@
                 <h2 id="titre2"> Réservez votre date</h2>
                 <p> Choisissez votre date et remplissez le formulaire. </p>
                   </div>
-
+<!--
                <div id="calendar">
                 <h3>October</h3>
                 <table>
@@ -158,9 +158,15 @@
                 </table>
                 </div>
             
-            <section>
+            <secti on>-->
             <h3>Formulaire de contact</h3>
-            <div id="formular">
+             
+                <?php
+
+             include('formular/formular.php');
+             ?>
+            
+           <!-- <div id="formular">
     
              <form>
             <input name="Nam" type="text" class="input name" placeholder="Name">
@@ -168,9 +174,9 @@
             <input name="email" type="text" class="input email" placeholder="email@email.com" />
             <input name="telephone" type="text" class="votre numéro" placeholder="Téléphone"/>
  
-            <a href="#" id="boton">SENDEN<a/>
+            <a href="#" id="boton">Envoyer<a/>
         
-            </form>
+            </form>-->
      
    </div><!-- /formulario -->
     

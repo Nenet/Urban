@@ -1,6 +1,6 @@
 <?php
 
-$titrePage = 'Liste des prix';
+$titrePage = 'Lister des Soins';
 
 // Inclure le header html
 include('layout/headerClient.php');
@@ -25,11 +25,11 @@ try {
 	include('libs/renderFunctions.php');
 
 	// Pérparer la requête SQL
-	$sql = 'SELECT soins.idSoins, Title, Price, Categories_id
+	$sql = 'SELECT idSoins, Title, Price, Name
 			FROM soins
 			JOIN categories
-			ON soins.Categories_id = categories.id';
-
+			ON soins.Categories_id = id';
+        
 	// Gestion du tri et du sens de tri
 	if ($tri!="") {
 	    $sql .= ' ORDER BY '.$tri;
@@ -43,13 +43,13 @@ try {
 	}
 	
 	// Effectuer la requête et stocker les valeurs dans $listePersonne
-	$soins  	= $monObjet->query($sql);
-	$pricelist	= $soins->fetchAll(PDO::FETCH_ASSOC);
+	$mesSoins 	= $monObjet->query($sql);
+	$listeSoins 	= $mesSoins->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
-	<h1>Lister les prix</h1>
+	<h1>Lister des Soins</h1>
 	
-<?php echo renduHtmlTable('id', $PriceListe, $tri, $sens); ?>
+<?php echo renduHtmlTable('id', $listeSoins, $tri, $sens); ?>
 	
 	<hr>
 	
@@ -64,4 +64,3 @@ try {
 // Inclure le footer html
 include('layout/footerClient.php');
 ?>
-
