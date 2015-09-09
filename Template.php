@@ -150,6 +150,7 @@
               AgendaCH.renderButton({company:1228,btnStyle:2,btnTarget:'modal',btnText:"Prendre rendez-vous"})
             </script>
         
+        
           
                 <h2 id="titre2"> Besoin de nous contacter ?</h2>
                 
